@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .cont {
+
+            width: 50%;
+            position: absolute;
+            top: 10%;
+            left: 25%;
+
+
+        }
+
+        .btn-outline-primary {
+
+            color: goldenrod;
+            border-color: coral;
+            background-color: whitesmoke;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: coral;
+            color: white;
+
+        }
+
+        .btn-outline-primary:disabled {
+            background-color: coral;
+            color: white;
+
+        }
+
+        #n3 {
+            color: crimson;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: medium;
+            border-color: coral;
+        }
+    </style>
+    <script>
+        function cal() {
+            N1 = parseInt(document.getElementById("var1").value);
+            N2 = parseInt(document.getElementById("var2").value);
+            N3 = N1 + N2;
+            document.getElementById("n3").innerHTML = "The sum of the given two numbers is:" + N3;
+
+        }
+
+    </script>
+    <title>Telangana Lrs Calculator</title>
+</head>
+
+<body>
+    <div class="container cont">
+        <div class="panel panel-primary" style="border-color: goldenrod;">
+            <div class="panel-heading text-center" style="background-color: coral;">
+                <h1> Telangana Lrs Calculator</h1>
+            </div>
+            <div class="panel-body">
+                <form>
+                    <label for="">
+                        <h3>Acre/metre</h3>
+                    </label>
+                    <div class="form-group">
+                        <input type="number" class="form-control" style="border-color: goldenrod;" id="var1"
+                            placeholder="Enter any Number">
+                    </div>
+                    <label for="">
+                        <h3>Rate/Volume</h3>
+                    </label>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="var2" style="border-color: goldenrod;"
+                            placeholder="Enter any Number">
+                    </div>
+
+
+
+                </form>
+                <div class="form-group">
+                    <button class="btn-outline-primary btn-block btn-lg" onclick="cal()">Submit</button>
+                </div>
+
+                <div class="form-group">
+                    <div id="n3" class="form-control"></div>
+                </div>
+
+            </div>
+
+</body>
+
+</html>
